@@ -12,7 +12,8 @@
  * @version 1.0.0
  */
 
-#include <UIPEthernet.h> // https://github.com/ntruchsess/arduino_uip
+#include <SPI.h>
+#include <Ethernet.h> 
 #include <OneWire.h>
 #include <DallasTemperature.h> // https://github.com/milesburton/Arduino-Temperature-Control-Library
 #include <PString.h>
