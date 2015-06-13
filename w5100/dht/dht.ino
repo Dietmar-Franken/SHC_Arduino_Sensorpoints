@@ -20,7 +20,7 @@
 #define PRINT_ON_SERIAL 1 //Werte auch auf der Seriellen Schnittstelle ausgebe
 
 //Daten des Sensorpunktes
-#define POINT_ID 1   //ID des Sensorpunktes (muss zwischen 1 und 999 sein)
+#define POINT_ID 5   //ID des Sensorpunktes (muss zwischen 1 und 999 sein)
 
 //Sensorpunkt Spannung senden
 #define SEND_POINT_CURRENT 1  //Sensorpunkt Spannung Senden
@@ -53,7 +53,7 @@
 
 //Ethernet Initalisieren
 byte mac[] = { 0xDE, 0xAD, 0xBE, 0xEF, 0xFE, 0xED };
-byte server[] = {192, 168, 115, 221};
+byte server[] = {192, 168, 115, 10};
 EthernetClient client;
 char host[] = "192.168.115.10";
 char url[] = "/shc/index.php?app=shc&a&ajax=pushsensorvalues&"; //? oder & am Ende um dem Query String weiter zu fuehren
